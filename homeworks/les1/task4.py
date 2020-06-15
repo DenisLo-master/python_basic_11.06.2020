@@ -3,6 +3,7 @@
 
 number = ''
 numbers = []
+current_max = 0
 
 while True:
     number = input('Введите число:\n')
@@ -14,10 +15,8 @@ while True:
         continue
     break
 i = len(number)
-print(i)
 while not i == 0:
-    n = len(number)
-    while not n == 0:
-        if number[i] - number[n] > 0
+    if int(number[i-1]) > int(current_max):
+        current_max = number[i-1]
     i -= 1
-    i = len(numbers)
+print(f'Максимальное число - {current_max}')
