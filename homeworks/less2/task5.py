@@ -26,7 +26,7 @@ while i < len(my_list):
         break
     elif u_number == my_list[i]:
         count = my_list.count(u_number)
-        my_list.insert(i+count, u_number)
+        my_list.insert(i + count, u_number)
         break
     i += 1
 print(my_list)
