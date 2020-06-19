@@ -19,22 +19,26 @@
 }"""
 template = ['название', 'цена', 'количество', 'ед']
 structure = []
-sku = {}
-while True:
-    i = 0
-    while i < 4:
-        item = input(f'Структура\nЗаполните поле {template[i]}\n')
-        sku[template[i]] = item
-        print(sku)
-        structure.append((i,sku))
-        i += 1
-    while new_sku == 'y':
+sku = True
+new_sku = 'y'
+create_sku = {}
+id_sku = 1
+while sku == True:
+    if new_sku != ('n' and 'y'):
         new_sku = input('Ввести еще одно SKU? (y/n): ')
-        if  new_sku == 'n':
-            break
-        elif new_sku == 'n':
-            break
-        else:
-            break
-
-
+    if new_sku == 'n':
+        sku = False
+        break
+    elif new_sku == 'y':
+        i = 0
+        while i < 4:
+            item = input(f'Заполните поле "{template[i]}"\n')
+            create_sku[template[i]] = item
+            i += 1
+        new_sku = 'new'
+        structure.append((id_sku, create_sku.copy()))
+        id_sku += 1
+        print(structure)
+    else:
+        continue
+    continue
