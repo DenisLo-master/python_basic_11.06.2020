@@ -5,7 +5,7 @@
 
 def my_func(num1: int, num2: int, num3: int) -> int:
     """
-    search for two of the max arguments out of three
+    search for two of the smallest arguments out of three
 
     :param num1: any number
     :param num2: any number
@@ -26,4 +26,5 @@ def my_func(num1: int, num2: int, num3: int) -> int:
     print(m1_num + m2_num)
 
 
-my_func(14, 15, 7)
+
+my_func(9, 7, 17)
