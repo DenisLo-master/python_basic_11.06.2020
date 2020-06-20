@@ -30,4 +30,6 @@ while True:
     except ValueError:
         print('Введите целое число')
         continue
+
+
 division(number1, number2)
