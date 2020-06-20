@@ -25,7 +25,7 @@ new_sku = 'y'
 create_sku = {}
 id_sku = 1
 while sku == True:
-    if new_sku != ('n' and 'y'):
+    if new_sku != 'y':
         new_sku = input('Ввести еще одно SKU? (y/n): ')
     if new_sku == 'n':
         sku = False
@@ -36,7 +36,7 @@ while sku == True:
             item = input(f'Заполните поле "{template[i]}"\n')
             create_sku[template[i]] = item
             i += 1
-        new_sku = 'new'
+        new_sku = None
         structure.append((id_sku, create_sku.copy()))
         id_sku += 1
         print(structure)
