@@ -5,15 +5,15 @@
 
 import random
 
-count = random.randrange(10, 20)
-list = []
-for i in range(count):
-    list.append(random.randrange(1, 1000))
+list = [random.randrange(1, 1000) for i in range(10, 20)]
 print(list)
 
-result = []
-for n in range(len(list)):
-    print(n)
-    if list[n] > list[n - 1]:
-        result.append(list[n])
+# result = []
+# for n in range(len(list)):
+#     if list[n] > list[n - 1]:
+#         result.append(list[n])
+# print(result)
+
+
+result = [item for idx, item in enumerate(list) if idx and item > list[idx - 1]]
 print(result)
