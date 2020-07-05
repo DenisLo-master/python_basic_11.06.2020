@@ -10,12 +10,12 @@ class Road:
     _length = 20
     _width = 5000
 
-    def square(self, thickness):
+    def square(self, thickness=1):
         self.sq = Road._length * Road._width
         self.mass = self.sq * (thickness / 100) * 25
-        print(f'{self.mass/1000} тонн')
+        print(f'{self.mass / 1000} тонн')
 
 
 a = Road()
-a.square(5)
+a.square(15)
 print(1)
