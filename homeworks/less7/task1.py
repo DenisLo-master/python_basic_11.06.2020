@@ -37,6 +37,7 @@ class Matrix:
         raise ValueError or IndexError('различаются матрицы')
 
 
+
 if __name__ == '__main__':
     list1 = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
     list2 = [[11, 12, 13], [14, 15, 16], [17, 18, 19]]
